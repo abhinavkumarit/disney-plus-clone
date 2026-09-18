@@ -48,7 +48,7 @@ export default function MovieList({genreId, index_}) {
             hidden md:block absolute
             ${index_%3==0?'mt-[80px]':'mt-[150px]'} `} onClick={() => sliderLeft(elementRef.current)} />
     
-      <div ref={elementRef} className='flex overflow-x-scroll gap-8 scrollbar-none scroll-smooth pt-5 px-3 pb-5'>
+      <div ref={elementRef} className='flex gap-4 sm:gap-5 md:gap-6 overflow-x-auto scrollbar-none scroll-smooth px-1 py-5'>
               {/* <h1>MovieList Component</h1> */}
 
        {movieList.map((item, index) => (
